@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width+device-width, initial-scale=1.0">
+        <title>Zeta</title>
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="abb" class="hero">
+
+
+        <video autoplay loop muted plays-inline class="vid">
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>Zeta</h1>
+            <h2>Simple Budget Calculator</h2>
+            <a href="#cal">Calculate Budget</a>
+        </div>  
+    </div>
+    <br/>
+    <div  id ="cal" class="container">
+      <h4>Your Balance</h4>
+      <h1 id="balance">$0.00</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money-plus">
+            +$0.00
+          </p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money-minus">
+            -$0.00
+          </p>
+        </div>
+      </div>
+
+      <h3>History</h3>
+      <ul id="list" class="list">
+        <!-- <li class="minus">
+          Cash <span>-$400</span
+          ><button class="delete-btn">x</button>
+        </li> -->
+      </ul>
+      <h3>Add New Transition</h3>
+      <form id="form">
+          <div class="form-control">
+              <label for="text">Text</label>
+              <input type="text" id="text" placeholder="Enter Text...."/>
+          </div>
+          <div class="form-control">
+              <label for="amount">Amount <br> (negative - expense ,positive - income )</label>
+              <input type="number" id="amount" placeholder="Enter amount..."> 
+          </div>
+          <button class="btn">All transaction</button>
+      </form>
+    </div>
+    <!-- JavaYscript Project  -->
+    <script src="main.js"></script>
+
+</body>        
+</html>
